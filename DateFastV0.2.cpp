@@ -22,6 +22,7 @@ void calcudate(int day , int month)
             {
                 k=1 ;
                 point_x[0]+=1 ;
+                point_x[1]+=1 ;
             }
 
         if(month == 2)
