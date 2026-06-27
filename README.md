@@ -1,127 +1,149 @@
 # DateFast
 
-DateFast is a lightweight command-line application written in C++ for calculating the weekday corresponding to a given date and displaying monthly calendars directly from the terminal.
+DateFast is a lightweight command-line application written in **Python** for calculating weekdays, displaying monthly calendars, and improving weekday calculation skills through an interactive training mode.
 
-## Available Versions
-
-### DateFastV0.1
-
-* Calculates the weekday for dates in the year 2026 only.
-
-### DateFastV0.2
-
-* Calculates the weekday for dates between 2000 and 2099.
-* Added support for leap years.
-* Improved date validation.
-
-### DateFastV0.3
-
-* Interactive menu-based interface.
-* Calculate the weekday for any valid date between 2000 and 2099.
-* Display a monthly calendar for any month between 2000 and 2099.
-* Colored terminal interface using ANSI escape codes.
-* Improved code organization and user experience.
+---
 
 ## Features
 
-* Calculate the weekday for a given date.
-* Print monthly calendars.
+* Calculate the weekday for any valid date.
+* Display monthly calendars.
+* Interactive terminal menu.
+* Training mode with randomly generated dates.
+* Custom training year range.
 * Leap year support.
 * Date validation.
-* Support for years from 2000 to 2099.
-* Lightweight and fast.
-* Terminal-based user interface.
-* Written entirely in C++.
+* Colored terminal interface.
+* Fast and lightweight.
+* Built using Python standard libraries.
+
+---
 
 ## Requirements
 
-* C++ compiler (GCC, Clang, MSVC, etc.)
-* C++11 or newer
+* Python 3.8 or newer
 
-## Compilation
+---
 
-### DateFastV0.1
+## Running DateFast
 
-```bash
-g++ DateFastV0.1.cpp -o DateFastV0.1
-```
+Run the application with:
 
-### DateFastV0.2
+### Linux / macOS
 
 ```bash
-g++ DateFastV0.2.cpp -o DateFastV0.2
+python3 DateFastV1.0.py
 ```
 
-### DateFastV0.3
+### Windows
 
 ```bash
-g++ DateFastV0.3.cpp -o DateFastV0.3
+python DateFastV1.0.py
 ```
 
-## Usage
+---
 
-### Run DateFastV0.3
-
-```bash
-./DateFastV0.3
-```
-
-Main menu:
+## Main Menu
 
 ```text
-========= DateFast =========
-1 - Calculate weekday
-2 - Print monthly calendar
-99 - Exit
-============================
+===========================
+        DateFast
+===========================
+
+1. Calculate Weekday
+2. Print Calendar
+3. Training Mode
+0. Exit
+
+===========================
 ```
 
-## Example: Calculate Weekday
+---
+
+## Training Mode
+
+The training mode generates random dates within a year range chosen by the user.
+
+For each question, enter the weekday using the following numbering:
 
 ```text
-Enter Day   : 24
-Enter Month : 6
-Enter Year  : 2026
-
-Date : 2026/6/24
-Corresponding day : Wednesday
+1 = Sunday
+2 = Monday
+3 = Tuesday
+4 = Wednesday
+5 = Thursday
+6 = Friday
+7 = Saturday
 ```
 
-## Example: Print Monthly Calendar
+At the end of the session, DateFast displays:
+
+* Number of correct answers.
+* Number of wrong answers.
+* Final score.
+
+---
+
+## Example
+
+### Calculate Weekday
 
 ```text
-Enter Year  : 2026
-Enter Month : 6
+Day   : 24
+Month : 6
+Year  : 2026
 
-Su Mo Tu We Th Fr Sa
-    1  2  3  4  5  6
- 7  8  9 10 11 12 13
-14 15 16 17 18 19 20
-21 22 23 24 25 26 27
-28 29 30
+Weekday : Wednesday
 ```
 
-## Changelog
+### Print Monthly Calendar
 
-### V0.3
+```text
+Year  : 2026
+Month : 6
 
-* Added an interactive menu system.
-* Added monthly calendar printing.
-* Added ANSI color support.
-* Improved input validation.
-* Refactored code into smaller functions.
-* Improved overall user experience.
+     June 2026
+Mo Tu We Th Fr Sa Su
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30
+```
 
-### V0.2
+---
 
-* Added support for years from 2000 to 2099.
-* Added leap year handling.
-* Improved date calculation capabilities.
+## Version History
 
-### V0.1
+### DateFast V1.0
+
+* Complete rewrite in Python.
+* Interactive terminal menu.
+* Weekday training mode.
+* Custom training year range.
+* Monthly calendar printing.
+* ANSI color support.
+* Improved user experience.
+* Cleaner and simpler code using Python standard libraries.
+
+### DateFast V0.3
+
+* Interactive menu.
+* Monthly calendar printing.
+* ANSI color support.
+
+### DateFast V0.2
+
+* Support for years from 2000 to 2099.
+* Leap year support.
+* Improved date validation.
+
+### DateFast V0.1
 
 * Initial release.
-* Supported dates in the year 2026 only.
+* Weekday calculation for the year 2026.
+
+---
 
 ## License
 
